@@ -20,21 +20,20 @@
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="pntchat">
+  <meta name="apple-mobile-web-app-title" content="mojchat">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
   <meta name="google-signin-client_id" content="567155440507-19uvr0decc8ti2153e8k91f4pepia5s7.apps.googleusercontent.com">
-  <title>pntchat</title>
+  <title>mojchat</title>
   <link rel="manifest" href="manifest.json">
   <script src="https://cdn.jsdelivr.net/npm/afterglowplayer@1.x"></script>
 
-  
 </head>
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    var serviceWorkerVersion = ""2318748268"";
+    var serviceWorkerVersion = ""3816212139"";
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
@@ -114,44 +113,63 @@
           src="https://cdn.jsdelivr.net/npm/browser-image-compression@1.0.13/dist/browser-image-compression.js"></script>
   <script src="http://cdn.jsdelivr.net/g/filesaver.js"></script> -->
   <script src="app.js" defer></script> 
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyASe-BGBCTv3NIGzCNi4u6L9-4lrnFdC_k",
-    authDomain: "pntchat-869f2.firebaseapp.com",
-    databaseURL:"https://pntchat-869f2.firebaseapp.com",
-    projectId: "pntchat-869f2",
-    storageBucket: "pntchat-869f2.appspot.com",
-    messagingSenderId: "567155440507",
-    appId: "1:567155440507:web:345cb994b4e059944ddbde",
-    // measurementId: "G-BMQW5H4QNV"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-  const storageRef = firebase.storage().ref();
+<!--<script>-->
+<!--  // Your web app's Firebase configuration-->
+<!--  // For Firebase JS SDK v7.20.0 and later, measurementId is optional-->
+<!--  var firebaseConfig = {-->
+<!--    apiKey: "AIzaSyASe-BGBCTv3NIGzCNi4u6L9-4lrnFdC_k",-->
+<!--    authDomain: "pntchat-869f2.firebaseapp.com",-->
+<!--    databaseURL:"https://pntchat-869f2.firebaseapp.com",-->
+<!--    projectId: "pntchat-869f2",-->
+<!--    storageBucket: "pntchat-869f2.appspot.com",-->
+<!--    messagingSenderId: "567155440507",-->
+<!--    appId: "1:567155440507:web:345cb994b4e059944ddbde",-->
+<!--    // measurementId: "G-BMQW5H4QNV"-->
+<!--  };-->
+<!--  // Initialize Firebase-->
+<!--  firebase.initializeApp(firebaseConfig);-->
+<!--  firebase.analytics();-->
+<!--  const storageRef = firebase.storage().ref();-->
 
-  // Retrieve firebase messaging
-  // const messaging = firebase.messaging();
-  //   messaging.onBackgroundMessage(function(payload) {
-  //     console.log('Received background message ', payload);
-  //     const notificationTitle = payload.notification.title;
-  //     const notificationOptions = {body: payload.notification.body,};
-  //     self.registration.showNotification(notificationTitle,notificationOptions);
-  //   });
- 
+<!--  // Retrieve firebase messaging-->
+<!--  // const messaging = firebase.messaging();-->
+<!--  //   messaging.onBackgroundMessage(function(payload) {-->
+<!--  //     console.log('Received background message ', payload);-->
+<!--  //     const notificationTitle = payload.notification.title;-->
+<!--  //     const notificationOptions = {body: payload.notification.body,};-->
+<!--  //     self.registration.showNotification(notificationTitle,notificationOptions);-->
+<!--  //   });-->
+<!-- -->
 
-  //   if('serviceWorker' in navigator) {
-  //         navigator.serviceWorker.register('../firebase-messaging-sw.js')
-  //       .then(function(registration) {
-  //        console.log("Service Worker Registered");
-  //       messaging.useServiceWorker(registration);
-  //         });
-  //         }
+<!--  //   if('serviceWorker' in navigator) {-->
+<!--  //         navigator.serviceWorker.register('../firebase-messaging-sw.js')-->
+<!--  //       .then(function(registration) {-->
+<!--  //        console.log("Service Worker Registered");-->
+<!--  //       messaging.useServiceWorker(registration);-->
+<!--  //         });-->
+<!--  //         }-->
 
 
-</script>
+<!--</script>-->
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAop68yjVFdn063L_hMMnIBeq49OwxFFRo",
+      authDomain: "moj-lite-b5219.firebaseapp.com",
+      projectId: "moj-lite-b5219",
+      storageBucket: "moj-lite-b5219.firebasestorage.app",
+      messagingSenderId: "419606187126",
+      appId: "1:419606187126:web:f88926fe58042b78d26357",
+      measurementId: "G-6W0RT7ELNN"
+    };
+
+  </script>
 
 <script type="text/javascript">
   let useHtml = true;

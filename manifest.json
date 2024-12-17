@@ -1,6 +1,6 @@
 {
-    "name": "pntchat",
-    "short_name": "pntchat",
+    "name": "mojchat",
+    "short_name": "mojchat",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
