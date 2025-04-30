@@ -95298,15 +95298,13 @@ g.a=0
 B.b.a7(m.gd2(),new A.azD(g,n))
 f=B.b.gN(m.gd2())
 l=A.a_(f.b.I(0,"timestamp"),f.a)
-A.C("Sub-collection document data: "+A.j(l))
 f=B.b.gN(m.gd2())
 k=A.a_(f.b.I(0,"content"),f.a)
-A.C("lastMsg: "+A.j(k))
-i=A.a6(["timestamp",l,"lastMsg",k,"unreadMsgCount",B.f.k(g.a)],i,i)
+i=A.a6(["timestamp",l,"lastMsg",k,"unreadMsgCount",B.f.k(g.a),"listIsEmpty","false"],i,i)
 q=i
 s=1
 break}else{A.C("No documents found in sub-collection.")
-i=A.a6(["timestamp","","lastMsg",""],i,i)
+i=A.a6(["timestamp","","lastMsg","","unreadMsgCount","0","listIsEmpty","true"],i,i)
 q=i
 s=1
 break}p=2
@@ -95317,7 +95315,7 @@ d=o.pop()
 j=A.ab(d)
 A.C("Error fetching sub-collection: "+A.j(j))
 i=t.N
-i=A.a6(["timestamp","","lastMsg",""],i,i)
+i=A.a6(["timestamp","","lastMsg","","unreadMsgCount","0","listIsEmpty","true"],i,i)
 q=i
 s=1
 break
@@ -95663,34 +95661,37 @@ break}}}else l.yh(r,s)}},
 $S:71}
 A.azz.prototype={
 $1(a){return this.a29(a)},
-a29(a){var s=0,r=A.u(t.H),q=this,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b
-var $async$$1=A.p(function(a0,a1){if(a0===1)return A.q(a1,r)
-while(true)switch(s){case 0:s=a.gwR()?2:3
+a29(a2){var s=0,r=A.u(t.H),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1
+var $async$$1=A.p(function(a3,a4){if(a3===1)return A.q(a4,r)
+while(true)switch(s){case 0:s=a2.gwR()?3:4
 break
-case 2:i=q.a
-s=4
-return A.o(i.yW(B.b.ga5(a.b.b.a)),$async$$1)
-case 4:p=a1
-h=J.a3(p,"timestamp")
-o=h==null?"":h
-g=J.a3(p,"lastMsg")
-n=g==null?"":g
-f=q.b
-e=A.a_(f.b.I(0,"lastSeen"),f.a)
+case 3:g=p.a
+s=5
+return A.o(g.yW(B.b.ga5(a2.b.b.a)),$async$$1)
+case 5:o=a4
+f=J.a3(o,"timestamp")
+n=f==null?"":f
+e=J.a3(o,"lastMsg")
 m=e==null?"":e
-d=J.a3(p,"unreadMsgCount")
-l=d==null?"":d
-if(J.c6(o)===0&&J.k9(m))o=m
-A.C("Single timestamp: "+A.j(o))
-A.C("Last Message: "+A.j(n))
-A.C("Last unreadMsgCount: "+A.j(l))
-c=i.at
-if(c!=null)A.ac(J.a3(c.a,"id"))
-b=A.xw(l,null)
-k=b==null?0:b
-j=k>5?"5+":J.aA(k)
-i.aoF(f,o,n,j)
-case 3:return A.r(null,r)}})
+d=p.b
+c=A.a_(d.b.I(0,"lastSeen"),d.a)
+l=c==null?"":c
+b=J.a3(o,"unreadMsgCount")
+k=b==null?"":b
+a=J.a3(o,"listIsEmpty")
+j=a==null?"false":a
+if(J.c6(n)===0&&J.k9(l))n=l
+A.C("Single timestamp: "+A.j(n))
+A.C("Last Message: "+A.j(m))
+A.C("Last unreadMsgCount: "+A.j(k))
+a0=g.at
+if(a0!=null)A.ac(J.a3(a0.a,"id"))
+a1=A.xw(k,null)
+i=a1==null?0:a1
+h=i>5?"5+":J.aA(i)
+if(J.f(j,"true")){s=1
+break}g.aoF(d,n,m,h)
+case 4:case 1:return A.r(q,r)}})
 return A.t($async$$1,r)},
 $S:630}
 A.azn.prototype={
